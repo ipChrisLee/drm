@@ -1,0 +1,15 @@
+build*
+**/__pycache__
+
+.idea
+.vscode
+.cache
+.xmake
+
+CMakeUserPresets.json
+compile_commands.json
+.venv
+
+.*.swp
+*.pyc
+
