@@ -32,6 +32,7 @@ Diagnostics:
       readability-identifier-naming.LocalConstantPointerCase: Camel_Snake_Case
       readability-identifier-naming.LocalPointerCase: camelBack
       readability-identifier-naming.LocalVariableCase: camelBack
+      readability-identifier-naming.LocalVariableIgnoredRegexp: '^_.*$'
       readability-identifier-naming.MacroDefinitionCase: lower_case
       readability-identifier-naming.MemberCase: camelBack
       readability-identifier-naming.MethodCase: lower_case

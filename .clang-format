@@ -1,5 +1,6 @@
 BasedOnStyle: LLVM
 AccessModifierOffset: -2
+ColumnLimit: 120
 AlignAfterOpenBracket: Align
 AlignConsecutiveAssignments: None
 AlignOperands: Align
@@ -32,7 +33,6 @@ BreakBeforeBinaryOperators: None
 BreakBeforeTernaryOperators: true
 BreakConstructorInitializers: BeforeColon
 BreakInheritanceList: BeforeColon
-ColumnLimit: 0
 CompactNamespaces: true
 ContinuationIndentWidth: 2
 IndentCaseLabels: true
@@ -48,7 +48,6 @@ SeparateDefinitionBlocks: Always
 NamespaceIndentation: Inner
 ObjCSpaceAfterProperty: false
 ObjCSpaceBeforeProtocolList: true
-PointerAlignment: Middle
 ReflowComments: false
 SpaceAfterCStyleCast: true
 SpaceAfterLogicalNot: false
@@ -60,12 +59,13 @@ SpaceBeforeInheritanceColon: true
 SpaceBeforeParens: ControlStatements
 SpaceBeforeRangeBasedForLoopColon: false
 SpaceInEmptyParentheses: false
-SpacesBeforeTrailingComments: 0
+SpacesBeforeTrailingComments: 2
 SpacesInAngles: false
 SpacesInCStyleCastParentheses: false
 SpacesInContainerLiterals: true
 SpacesInParentheses: false
 SpacesInSquareBrackets: false
+PointerAlignment: Left
 TabWidth: 2
 UseTab: Never
 
