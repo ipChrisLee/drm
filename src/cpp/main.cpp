@@ -122,8 +122,8 @@ int main(int argc, char** argv) {
       for (auto it = stIt; it != edIt; ++it) { std::cout << *it << " "; }
       std::cout << std::endl;
     } else {
-      selectedEntries.erase(selectedEntries.begin(), stIt);
-      selectedEntries.erase(edIt, selectedEntries.end());
+      for (auto it = selectedEntries.begin(); it != stIt; ++it) { fs::remove_all(*it); }
+      for (auto it = edIt; it != selectedEntries.end(); ++it) { fs::remove_all(*it); }
     }
   } else {
     if (drmOptions.dry) {
@@ -131,7 +131,7 @@ int main(int argc, char** argv) {
       for (auto it = stIt; it != edIt; ++it) { std::cout << *it << " "; }
       std::cout << std::endl;
     } else {
-      selectedEntries.erase(stIt, edIt);
+      for (auto it = stIt; it != edIt; ++it) { fs::remove_all(*it); }
     }
   }
   return 0;
